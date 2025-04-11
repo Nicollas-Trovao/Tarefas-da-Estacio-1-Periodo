@@ -1,0 +1,126 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Tarefas do Dia 31/03; Primeiro Periodo
+    // Codigo em C++
+    
+    //Lendo Valores inseridos pelo Usuario
+    //Valores:
+    string Nome, Sobrenome;
+    int Idade;
+    
+    cout << "Olá! Qual o seu Nome?" << endl;
+    cin >> Nome;
+    
+    cout << "e Sobrenome?" << endl;
+    cin >> Sobrenome;
+    cout << endl;
+    
+    cout << "Qual sua idade?" << endl;
+    cin >> Idade;
+    
+    cout << endl;
+    
+    //Resultado:
+    cout << "Então seu nome é " << Nome << " " << Sobrenome << ", e você tem " << Idade << " anos de Idade..." << endl; 
+    
+    cout << endl;
+    
+    //Lendo a Idade do Usuario, e definindo seu ano de nascimento
+    //Valores
+    int AnoNasc;
+    string Aniver;
+    bool Loop = true;
+    
+    while (Loop)
+    {
+        cout << "Você já comemorou seu Aniversario? (s/n)" << endl;
+        cin >> Aniver;
+        
+        if (Aniver == "s") 
+        {
+            AnoNasc = 2025 - Idade;
+            Loop = false;
+        } else if (Aniver == "n")
+        {
+            AnoNasc = 2024 - Idade;
+            Loop = false;
+        }else
+        {
+            cout << endl;
+            cout << "Escolha uma das Opções" << endl;
+            cout << endl;
+        }
+    }
+    
+    cout << endl;
+    
+    cout << "Então você nasceu em " << AnoNasc << endl;
+    
+    cout << endl;
+    
+    //Lendo os Valores das Notas do Usuario
+    //Valores
+    float nota1, nota2, nota3, nota4;
+    
+    cout << "Qual foi sua Nota no Primeiro Bimestre?" << endl;
+    cin >> nota1;
+    cout << endl;
+    
+    cout << "Qual foi sua Nota no Segundo Bimestre?" << endl;
+    cin >> nota2;
+    cout << endl;
+    
+    cout << "Qual foi sua Nota no Terceiro Bimestre?" << endl;
+    cin >> nota3;
+    cout << endl;
+    
+    cout << "Qual foi sua Nota no Quarto Bimestre?" << endl;
+    cin >> nota4;
+    cout << endl;
+    
+    //Resultado:
+    float Media = (nota1 + nota2 + nota3 + nota4)/4;
+    cout << "Sua Média é de : " << Media << endl;
+    
+    cout << endl;
+    
+    //Lendo o Salario do Usuario, e Descontando 8%
+    //Valores
+    int Salario;
+    cout << "Olá! Qual seu Salario Mensal?" << endl;
+    cin >> Salario;
+    
+    int SalarioLiquido = Salario * 0.92;
+    int SalarioDesconto = Salario - SalarioLiquido;
+    
+    cout << endl;
+    
+    //Resultado:
+    cout << "Seu Salario Bruto é de " << Salario << endl;
+    cout << "Com um Desconto de " << SalarioDesconto << endl;
+    cout << "Seu Salario Liquido é " << SalarioLiquido << endl;
+
+    cout << endl;
+    
+    //Criando uma Tabuada com o Valor que o Usuario Adicionar
+    //Valores:
+    int Num;
+    cout << "A Tabuada de qual Numero você deseja ver?" << endl;
+    cin >> Num;
+    
+    cout << Num << " x 1 = " << Num * 1 << endl;
+    cout << Num << " x 2 = " << Num * 2 << endl;
+    cout << Num << " x 3 = " << Num * 3 << endl;
+    cout << Num << " x 4 = " << Num * 4 << endl;
+    cout << Num << " x 5 = " << Num * 5 << endl;
+    cout << Num << " x 6 = " << Num * 6 << endl;
+    cout << Num << " x 7 = " << Num * 7 << endl;
+    cout << Num << " x 8 = " << Num * 8 << endl;
+    cout << Num << " x 9 = " << Num * 9 << endl;
+    cout << Num << " x 10 = " << Num * 10 << endl;
+    
+    return 0;
+}
