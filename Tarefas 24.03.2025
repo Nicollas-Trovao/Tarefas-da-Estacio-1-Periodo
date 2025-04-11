@@ -1,0 +1,44 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Tarefas do Dia 24/03; Primeiro Periodo
+    
+    // Calculo da área do Retangulo
+    //Valores:
+    int AlturaR = 12, LarguraR = 24, AreaR = AlturaR * LarguraR;
+    
+    //Resultado:
+    cout << "A área de um Retangulo, é sua Altura vezes a sua Largura, que nesse caso é: " << AreaR << endl;
+    
+    cout << endl;
+    
+    //Calculo da área do Quadrado
+    //Valores:
+    int AlturaQ = 12, LarguraQ = 12, AreaQ = AlturaQ * LarguraQ;
+    
+    //Resultado:
+    cout << "A área de um Quadrado é sua Altura vezes sua Largura, como a do Retalngulo, porem, ambas são iguais neste caso, logo a área do Quadrado é: " << AreaQ << endl;
+    
+    cout << endl;
+    
+    //Calculo da área do Circulo
+    //valoes:
+    int ConstanteC = 3, RaioC = 12, AreaC = RaioC * ConstanteC;
+    
+    //Resultado:
+    cout << "A área de um circulo é calculado multiplicando sua Constante, que tem o valor aproximado de 3, com seu Raio, que é a distancia do centro para a borda do circulo, então a area desse Circulo é de: " << AreaC << endl;
+    
+    cout << endl;
+    
+    //Lendo o Nome, Sobrenome e a Idade do Usuario
+    //Valores:
+    string Nome = "Nicollas", Sobrenome = "Trovão dos Santos";
+    int Idade = 21;
+    
+    //Resultado:
+    cout << "Olá! Meu Nome é " << Nome << " " << Sobrenome << ", e tenho " << Idade << " anos de Idade." << endl;
+
+    return 0;
+}
