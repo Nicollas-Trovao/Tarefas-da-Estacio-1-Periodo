@@ -25,11 +25,24 @@ int main() {
     cout << endl;
     
     //Calculo da área do Circulo
-    //valoes:
+    //valores:
     int ConstanteC = 3, RaioC = 12, AreaC = RaioC * ConstanteC;
     
     //Resultado:
     cout << "A área de um circulo é calculado multiplicando sua Constante, que tem o valor aproximado de 3, com seu Raio, que é a distancia do centro para a borda do circulo, então a area desse Circulo é de: " << AreaC << endl;
+    
+    cout << endl;
+    
+    //Fazendo Conversões Monetarias
+    //Valores:
+    float Real = 6, Dolar = 1; 
+    
+    //Resultado:
+    cout << "A Conversão de Dolar para Real é de " << Real << " Reais para cada " << Dolar << " Dolar" << endl;
+    
+    cout << endl;
+    
+    cout << "A Conversão de Real para Dolar é de " << Dolar << " Dolar para cada " << Real << " Reais" << endl;
     
     cout << endl;
     
